@@ -16,8 +16,15 @@ cabal-version:       >=1.10
 library
   hs-source-dirs:      src
   exposed-modules:     Lib
-  build-depends:       base   >= 4.7 && < 5
-                     , GLFW-b >= 1.4 && < 1.5
+  build-depends:       base                >= 4.7  && < 5
+--                   , bytestring          >= 0.10 && < 0.11
+                     , language-c          >= 0.5  && < 0.6
+                     , language-c-comments >= 0.3  && < 0.4
+                     , haskell-src-exts    >= 1.17 && < 1.18
+                     -- haskell-generate
+                     , GLFW-b              >= 1.4  && < 1.5
+                     , pretty-show         >= 1.6  && < 1.7
+                     , heap                >= 1.0  && < 1.1
   default-language:    Haskell2010
 
 executable glfwbspec-regen
